@@ -1,0 +1,116 @@
+.app-container {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+header {
+  margin-top: 40px;
+}
+
+h4 {
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+h1 a {
+  color: #6492f6;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 120px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+main form > * {
+  margin-bottom: 12px;
+}
+
+label {
+  font-size: 1em;
+}
+
+input {
+  text-align: center;
+  font-size: large;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #333;
+  text-transform: capitalize;
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  background: transparent;
+  color: inherit;
+}
+
+input:focus {
+  border-bottom: 2px solid #8bc34a;
+}
+
+input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button {
+  background: #8bc34a;
+  color: #fff;
+  border: none;
+  font-size: 0.8em;
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #7cb342;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #f44336;
+  font-size: 0.8em;
+  margin: 8px 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  input {
+    border-bottom-color: #fff;
+  }
+
+  input:focus {
+    border-bottom-color: #8bc34a;
+  }
+}
